@@ -13,29 +13,38 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Gneneric project styles */
     color: #3a3a3a;
     font-family: 'Signika Negative', sans-serif;
-
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: 'Expletus Sans', sans-serif;
     text-transform: uppercase;
 }
 
+/* Main content */
+main {
+    flex: 1 0 auto;
+}
+
 /* Header */
 header {
-    background-color: #F5F4F4;
-    padding: 10px;
+    background-color: #fff;
+    padding: 30px; /* Add padding to make it taller */
     width: 100%;
     box-shadow: 0 1px 4px #808080;
     z-index: 99;
-    justify-content: space-between;
-    display: flex;
-    align-items: baseline;
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Ensure the logo stays centered */
+    position: relative;
+    height: 100px; /* Define a height for the header */
+}
+
+/* Logo Styles */
+#logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 header a {
@@ -43,26 +52,152 @@ header a {
     color: #000;
 }
 
+/* Menu styles */
 #menu {
     font-size: 115%;
     letter-spacing: 2px;
     list-style-type: none;
     text-transform: uppercase;
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
 }
 
-#menu>li {
+#menu > li {
     margin-bottom: 15px;
     margin-top: 15px;
 }
 
-/* Navbar with dropsown toggle styles */
+/* Navigation Menu */
 nav {
-    
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+}
+
+/* Mobile Hamburger Menu Styles */
+#menu-toggle {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate the toggle when the menu is active */
+#menu-toggle.active {
+    transform: rotate(90deg);
+}
+
+/* Navigation Menu for Small Screens */
+#nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Show menu when active */
+#nav-menu.active {
+    display: flex;
 }
 
 
-/* Main content */
-main {
-    /* Make main element take up any extra space to push footer down */
-    flex: 1 0 auto;
+
+
+
+
+/* Footer */
+footer {
+    background-color: #F5F4F4;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
+
+#socials {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    list-style-type: none;
+}
+
+#socials i {
+    font-size: 130%;
+    color: #11191E;
+}
+
+.text-center {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    /* Mobile Menu Button */
+    #menu-toggle {
+        display: block;
+    }
+
+    /* Menu items in a column on mobile */
+    #menu {
+        flex-direction: column;
+        gap: unset;
+        padding: 10px;
+    }
+
+    /* Hide nav by default on mobile */
+    #nav-menu {
+        display: none;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Shadow only at the bottom */
+        padding-left: 10px;
+    }
+
+    /* Show nav menu when active on mobile */
+    #nav-menu.active {
+        display: flex;
+    }
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    #logo {
+        font-size: 1.5rem; /* Smaller logo size on mobile */
+    }
+
+    header {
+        height: 80px;
+    }
+
+    #menu-toggle {
+        top: 26px;
+    }
+
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 320px) {
+    #logo {
+        font-size: 1.2rem; /* Smaller logo size on mobile */
+    }
+
+    #menu-toggle {
+        top: 23px;
+    }
+
+}
+
