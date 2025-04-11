@@ -65,8 +65,8 @@ h3 {
     color: rgb(1, 3, 70);
 }
 
-p { 
-    margin: 20px 0; 
+p {
+    margin: 20px 0;
 }
 
 main {
@@ -75,7 +75,8 @@ main {
 
 a.btn {
     display: inline-block;
-    background-color: #020A32; /* Your custom dark blue */
+    background-color: #020A32;
+    /* Your custom dark blue */
     color: #fff;
     padding: 0.8rem 2rem;
     text-decoration: none;
@@ -86,7 +87,8 @@ a.btn {
 }
 
 a.btn:hover {
-    background-color: #031249; /* Slightly lighter shade for hover */
+    background-color: #031249;
+    /* Slightly lighter shade for hover */
     transform: translateY(-2px);
 }
 
@@ -179,19 +181,82 @@ nav {
 
 
 /* ------------------------------------------------Main Content Section */
+.section-container {
+    line-height: 1.6;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+
+.video-section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 2rem;
+    padding: 2rem;
+    position: relative;
+    width: 100%;               /* Ensure full width */
+
+}
+
+.video-section-wrapper .vertical-video {
+    max-width: 400px;
+    width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add this line */
+}
+
+.video-side-sections {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 20px;
+}
+
+
 .vertical-video {
     max-height: 600px;
     width: auto;
     display: block;
     margin: 0 auto;
     border-radius: 12px;
-  }
+    object-fit: cover; /* Ensures poster/image fills the box */
+}
 
-.section-container {
-    line-height: 1.6;
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 40px 20px;
+
+#playPauseBtn {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+    background: goldenrod;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.5);
+}
+
+
+#playPauseBtn:hover {
+    background-color: rgb(255, 194, 38);
+}
+
+#playPauseBtn.playing {
+    background-color: rgb(248, 191, 45);
+}
+
+#playPauseBtn svg {
+    width: 36px;
+    height: 36px;
+    fill: rgb(0, 0, 0);
+    border-radius: 50%;
 }
 
 .center {
@@ -200,7 +265,8 @@ nav {
 
 .highlight {
     font-weight: bold;
-}
+    display: inline-block; /* Makes the span behave like a block element */
+    margin-bottom: 1rem; /* Now the margin will apply */}
 
 .section {
     margin-bottom: 40px;
@@ -275,23 +341,56 @@ nav {
     border-left: none;
 }
 
+.no-bullets {
+    list-style-type: none;
+    padding-left: 0; /* Remove any default padding */
+}
+
+.no-bullets li {
+    margin-bottom: 10px; /* Space between items */
+}
+
 
 .affiliate-options {
     display: flex;
+    flex-direction: column; 
+    align-items: center; 
     justify-content: center;
     gap: 2rem;
-    /* space between the cards */
     padding: 2rem;
     flex-wrap: wrap;
-    /* wrap on smaller screens */
+}
+
+.options-header {
+    font-size: 30px;
 }
 
 .affiliate-options section {
     flex: 1;
     min-width: 280px;
-    max-width: 350px;
-    padding: 1.5rem;
+    padding: 2rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.limitless-option {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.limitless-image {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.option-text {
+    flex: 1;
+    text-align: left; 
 }
 
 .process-options {
@@ -315,6 +414,7 @@ nav {
     text-align: center;
     padding: 2rem;
 }
+
 
 /* ------------------------------------------------Footer */
 footer {
@@ -350,6 +450,19 @@ footer {
 /* Responsive Styles for Mobile */
 @media (max-width: 768px) {
 
+    #logo {
+        font-size: 1.5rem;
+        /* Smaller logo size on mobile */
+    }
+
+    header {
+        height: 80px;
+    }
+
+    #menu-toggle {
+        top: 26px;
+    }
+
     /* Mobile Menu Button */
     #menu-toggle {
         display: block;
@@ -379,24 +492,50 @@ footer {
     #nav-menu.active {
         display: flex;
     }
+
+    .limitless-option {
+        flex-direction: column; /* Stack image and text on smaller screens */
+        align-items: center; /* Center content */
+        gap: 1rem; /* Add space between image and text */
+    }
+
+    .limitless-image {
+        width: 80%; /* Adjust image size on smaller screens */
+    }
+
+    .affiliate-options {
+        gap: 1rem;  /* Reduce gap between options on smaller screens */
+    }
+
+    .affiliate-options section {
+        min-width: 250px;
+        max-width: 100%; /* Allow items to stretch fully on mobile */
+    }
+
+    /* Adjust the text size for mobile devices */
+    .options-header {
+        font-size: 24px; /* Slightly smaller header on mobile */
+    }
+
+    .option-text {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+    
+    .centered-content {
+        text-align: center; /* This centers the block */
+        max-width: 80%; /* Optional: Control the width of the content */
+        margin: 0 auto; /* Centers the block */
+    }
+    
 }
 
-/* Responsive Styles for Mobile */
-@media (max-width: 768px) {
-    #logo {
-        font-size: 1.5rem;
-        /* Smaller logo size on mobile */
-    }
 
-    header {
-        height: 80px;
-    }
-
-    #menu-toggle {
-        top: 26px;
-    }
-
-}
 
 /* Responsive Styles for Mobile */
 @media (max-width: 425px) {
@@ -408,7 +547,19 @@ footer {
         font-size: 1.4rem;
     }
 
+    .limitless-image {
+        width: 100%; /* Make image almost full width */
+    }
 
+    .options-header {
+        font-size: 22px;
+    }
+
+    #playPauseBtn {
+        top: 25%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
 
 }
 
@@ -423,4 +574,11 @@ footer {
         top: 23px;
     }
 
+    #playPauseBtn {
+        top: 20%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+
+    
 }

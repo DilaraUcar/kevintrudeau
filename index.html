@@ -32,108 +32,145 @@
 
     <main>
         <div class="main-section">
-            <section id="hero">
-
-
-            </section>
 
             <section class="section-container">
-                <video class="vertical-video" controls>
-                    <source src="assets/videos/school.mp4" type="video/mp4">
-                  </video>
-                  
-                <div class="section center">
-                    <h1>“Is success only for the ultra-rich?”</h1>
-                    <p>What you just saw is the most expensive school in Switzerland. How do you want to compete?</p>
-                </div>
+                <div class="video-section-wrapper">
+                    <video class="vertical-video" poster="assets/imgs/school_poster.jpeg">
+                        <source src="assets/videos/school.mp4" type="video/mp4">
+                    </video>
 
-                <div class="section">
-                    <p><span class="highlight">Hidden behind pristine walls, this institution quietly sculpts the next
-                            generation of leaders.</span><br>
-                        Here, confidence is forged, discipline is expected, and limitless thinking is the norm. In an
-                        environment few will ever access, students are taught not just how to succeed—but how to command
-                        their future, shape the world, and leave a legacy written in their name. This is where true
-                        power begins.</p>
-                </div>
+                    <!-- Custom Play/Pause Button -->
+                    <button id="playPauseBtn" aria-label="Play/Pause Video">
+                        <svg width="108" height="108" viewBox="0 0 108 108" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_2_53)">
+                                <circle cx="54" cy="54" r="30" fill="#FBB03B"></circle>
+                                <circle cx="54" cy="54" r="29" stroke="#D39D47" stroke-width="2"></circle>
+                            </g>
+                            <path
+                                d="M64.5 54C64.5006 54.2546 64.4353 54.5051 64.3105 54.727C64.1856 54.949 64.0055 55.1348 63.7875 55.2665L50.28 63.5297C50.0523 63.6691 49.7914 63.7452 49.5244 63.7502C49.2575 63.7551 48.994 63.6887 48.7613 63.5578C48.5307 63.4289 48.3387 63.2409 48.2049 63.0132C48.0711 62.7855 48.0004 62.5263 48 62.2622V45.7378C48.0004 45.4737 48.0711 45.2144 48.2049 44.9867C48.3387 44.759 48.5307 44.5711 48.7613 44.4422C48.994 44.3112 49.2575 44.2448 49.5244 44.2498C49.7914 44.2547 50.0523 44.3308 50.28 44.4703L63.7875 52.7334C64.0055 52.8651 64.1856 53.051 64.3105 53.2729C64.4353 53.4949 64.5006 53.7453 64.5 54Z"
+                                fill="black"></path>
+                            <defs>
+                                <filter id="filter0_d_2_53" x="0" y="0" width="108" height="108"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset></feOffset>
+                                    <feGaussianBlur stdDeviation="12"></feGaussianBlur>
+                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.901961 0 0 0 0 0.764706 0 0 0 0 0.541176 0 0 0 0.5 0">
+                                    </feColorMatrix>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_53">
+                                    </feBlend>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_53"
+                                        result="shape">
+                                    </feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </button>
 
-                <div class="section">
-                    <h2>Let’s talk about you for a second...</h2>
-                    <p>Be honest with yourself. How many times have you bought “the ultimate training”?</p>
-                    <p>The one that promised freedom. Wealth. A breakthrough... FAST. You were convinced this time would
-                        be different. This time, it was the goldmine.</p>
-                    <p>But here you are — again. A little more stressed. A little more disappointed. And with a little
-                        less money in your pocket.</p>
-                </div>
+                    <div class="video-side-sections">
+                        <h1>“Is success only for the ultra-rich?”</h1>
+                        <p>What you just saw is the most expensive school in Switzerland. How do you want to
+                            compete?</p>
 
-                <div class="section">
-                    <p>I know exactly how that feels. You tell yourself it’s an investment. You feel excited. Hopeful.
-                        Fired up. And then, weeks later — reality hits:</p>
-                    <ul>
-                        <li>No results</li>
-                        <li>No clarity</li>
-                        <li>Just more pressure</li>
-                    </ul>
-                    <p>Now you’re not just stuck — you’re stuck and broke.</p>
-                    <p>Crypto. Magic formulas. The latest “guru.” MLM systems. Manifestation books. You’ve tried them
-                        all, right?</p>
-                    <p>Chasing that one shortcut that would finally change everything…</p>
+                        <p><span class="highlight">Hidden behind pristine walls, this institution quietly sculpts
+                                the next
+                                generation of leaders.</span><br>
+                            Here, confidence is forged, discipline is expected, and limitless thinking is the norm.
+                            In an
+                            environment few will ever access, students are taught not just how to succeed—but how to
+                            command
+                            their future, shape the world, and leave a legacy written in their name. This is where
+                            true
+                            power begins.</p>
+                    </div>
                 </div>
+            </section>
+        </div>
+        
+        <div class="section">
+            <h2>Let’s talk about you for a second...</h2>
+            <p>Be honest with yourself. How many times have you bought “the ultimate training”?</p>
+            <p>The one that promised freedom. Wealth. A breakthrough... FAST. You were convinced this time would
+                be different. This time, it was the goldmine.</p>
+            <p>But here you are — again. A little more stressed. A little more disappointed. And with a little
+                less money in your pocket.</p>
+        </div>
 
-                <div class="section">
-                    <p><em>(Take a second and go back to the video at the top — Do you see a fast track? Or a methodical
-                            journey, perfectly structured, designed to shape leaders?)</em></p>
-                    <p>Here’s the reality:<br>
-                        You didn’t fail because you’re lazy or unmotivated. You failed because no one ever taught you
-                        how to build what actually matters:</p>
-                    <ul>
-                        <li>Real self-esteem</li>
-                        <li>Unshakable confidence</li>
-                        <li>Clarity and inner peace</li>
-                        <li>A mindset that holds firm when life pushes back</li>
-                        <li>And the truth that your <span class="highlight">net worth often mirrors your network</span>
-                        </li>
-                    </ul>
-                </div>
+        <div class="section">
+            <p>I know exactly how that feels. You tell yourself it’s an investment. You feel excited. Hopeful.
+                Fired up. And then, weeks later — reality hits:</p>
+            <ul>
+                <li>No results</li>
+                <li>No clarity</li>
+                <li>Just more pressure</li>
+            </ul>
+            <p>Now you’re not just stuck — you’re stuck and broke.</p>
+            <p>Crypto. Magic formulas. The latest “guru.” MLM systems. Manifestation books. You’ve tried them
+                all, right?</p>
+            <p>Chasing that one shortcut that would finally change everything…</p>
+        </div>
 
-                <div class="section">
-                    <h2>Hi, I’m Anne Petermann, business owner from Switzerland.</h2>
-                    <p>I lived that same cycle — over and over — for years, dreaming of having access to a higher
-                        education that would unlock my true power.</p>
-                    <p>And then… I found it.</p>
-                    <p><span class="highlight">“Your Wish Is Your Command”</span> — what a surprising title… and yet, it
-                        was my introduction to the elite world of wealth training.</p>
-                    <p>The ultimate school — one that meets you exactly where you are, helps you put things back in
-                        order, clears the weight of the inherited past,<br>
-                        <span class="highlight">and teaches you to create your future — with a confident, focused mind
-                            that brings clarity to your choices.</span>
-                    </p>
-                </div>
+        <div class="section">
+            <p><em>(Take a second and go back to the video at the top — Do you see a fast track? Or a methodical
+                    journey, perfectly structured, designed to shape leaders?)</em></p>
+            <p>Here’s the reality:<br>
+                You didn’t fail because you’re lazy or unmotivated. You failed because no one ever taught you
+                how to build what actually matters:</p>
+            <ul>
+                <li>Real self-esteem</li>
+                <li>Unshakable confidence</li>
+                <li>Clarity and inner peace</li>
+                <li>A mindset that holds firm when life pushes back</li>
+                <li>And the truth that your <span class="highlight">net worth often mirrors your network</span>
+                </li>
+            </ul>
+        </div>
 
-                <div class="section">
-                    <p>It all started with 14 audios placed in my hands. Listening to them felt like drinking from a
-                        fountain I had searched for all my life.</p>
-                    <p><span class="highlight">“Your Wish Is Your Command”</span> is your first taste — a rare glimpse
-                        into a world few ever access.<br>
-                        It’s the invitation that allows you to decide, with full clarity, whether you're ready to step
-                        inside <strong>The Global Information Network</strong> — a private success club designed to
-                        elevate every area of your life.</p>
-                </div>
+        <div class="section">
+            <h2>Hi, I’m Anne Petermann, business owner from Switzerland.</h2>
+            <p>I lived that same cycle — over and over — for years, dreaming of having access to a higher
+                education that would unlock my true power.</p>
+            <p>And then… I found it.</p>
+            <p><span class="highlight">“Your Wish Is Your Command”</span> — what a surprising title… and yet, it
+                was my introduction to the elite world of wealth training.</p>
+            <p>The ultimate school — one that meets you exactly where you are, helps you put things back in
+                order, clears the weight of the inherited past,<br>
+                <span class="highlight">and teaches you to create your future — with a confident, focused mind
+                    that brings clarity to your choices.</span>
+            </p>
+        </div>
 
-                <div class="section">
-                    <p><span class="highlight">It will break through every limitation you thought was permanent — and
-                            open your eyes to a whole new level of what's truly possible.</span></p>
-                    <p>You’ll no longer feel guilty for dreaming big: launching your own brand, buying your parents a
-                        house, speaking confidently on stage, or finally taking that sabbatical to travel the world.</p>
-                    <p>Because this isn’t about fitting into someone else’s box — <strong>it’s about creating a life
-                            that’s fully yours.</strong><br>
-                        Your ambition. Your freedom. Your legacy.</p>
-                </div>
+        <div class="section">
+            <p>It all started with 14 audios placed in my hands. Listening to them felt like drinking from a
+                fountain I had searched for all my life.</p>
+            <p><span class="highlight">“Your Wish Is Your Command”</span> is your first taste — a rare glimpse
+                into a world few ever access.<br>
+                It’s the invitation that allows you to decide, with full clarity, whether you're ready to step
+                inside <strong>The Global Information Network</strong> — a private success club designed to
+                elevate every area of your life.</p>
+        </div>
 
-                <div class="section">
-                    <p><strong>This isn’t another course.</strong><br>
-                        It’s the shift you’ve been craving.</p>
-                    <a class="btn" href="#">Start Listening for Free</a>
-                </div>
+        <div class="section">
+            <p><span class="highlight">It will break through every limitation you thought was permanent — and
+                    open your eyes to a whole new level of what's truly possible.</span></p>
+            <p>You’ll no longer feel guilty for dreaming big: launching your own brand, buying your parents a
+                house, speaking confidently on stage, or finally taking that sabbatical to travel the world.</p>
+            <p>Because this isn’t about fitting into someone else’s box — <strong>it’s about creating a life
+                    that’s fully yours.</strong><br>
+                Your ambition. Your freedom. Your legacy.</p>
+        </div>
+
+        <div class="section">
+            <p><strong>This isn’t another course.</strong><br>
+                It’s the shift you’ve been craving.</p>
+            <a class="btn" href="#">Start Listening for Free</a>
+        </div>
         </div>
         <a href="#training" class="arrow-btn">
             <span class="down-arrow"></span>
@@ -167,23 +204,30 @@
                 <a href="#subscribe" class="btn">Start Your Journey</a>
             </section>
 
-            <section id="the-limitless">
-                <h2>The Limitless <span class="popular">Most Popular Option</span></h2>
-                <p>Unlimited access to spectacular trainings that align you with the person you choose to become.
-                </p>
-                <p>You’ll be taught how to be, do, and have anything you desire in life.</p>
-                <p>Unlimited access to a worldwide community that you can connect with locally and during four major
-                    gatherings per year.</p>
-                <p><strong>Your subscription gifts include:</strong></p>
-                <ul>
-                    <li>✔️ A FREE 5-day Caribbean cruise</li>
-                    <li>✔️ A FREE Money Process</li>
-                    <li>✔️ A FREE ticket to a major event</li>
-                </ul>
-                <p><strong>Subscription Fee</strong>: $1,500 (one-time)<br>
-                    <strong>Monthly Dues</strong>: $150
-                </p>
-                <a href="#subscribe" class="btn">Join The Limitless</a>
+            <section class="limitless-option">
+                <img src="assets/imgs/limitless.jpeg" alt="Limitless Option" class="limitless-image">
+                <div class="option-text">
+                    <h2 class="options-header">The Limitless</h2>
+                    <p>Unlimited access to spectacular trainings that align you with the person you choose to
+                        become.
+                    </p>
+                    <p>You’ll be taught how to be, do, and have anything you desire in life.</p>
+                    <p>Unlimited access to a worldwide community that you can connect with locally and during four
+                        major
+                        gatherings per year.</p>
+                    <p><strong>Your subscription gifts include:</strong></p>
+                    <div class="centered-content">
+                        <ul class="no-bullets text-left">
+                            <li>✔️ A FREE 5-day Caribbean cruise</li>
+                            <li>✔️ A FREE Money Process</li>
+                            <li>✔️ A FREE ticket to a major event</li>
+                        </ul>
+                        <p class="text-left"><strong>Subscription Fee</strong>: $1,500 (one-time)<br>
+                            <strong>Monthly Dues</strong>: $150
+                        </p>
+                    </div>
+                    <a href="#subscribe" class="btn">Join The Limitless</a>
+                </div>
             </section>
         </div>
 
