@@ -259,6 +259,15 @@ nav {
     border-radius: 50%;
 }
 
+.content-wrapper {
+    max-width: 900px;         
+    padding-left: 2rem; 
+    padding-right: 1rem;
+    margin: 0 auto;
+    text-align: left;       
+}
+
+
 .center {
     text-align: center;
 }
@@ -304,7 +313,7 @@ nav {
     bottom: 30px;
     /* Move the arrow further down. Adjust this value */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(1000%);
     /* Center the button horizontally */
 }
 
@@ -350,6 +359,52 @@ nav {
     margin-bottom: 10px; /* Space between items */
 }
 
+.anne-container {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.anne-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.anne-image {
+    flex: 1 1 300px;
+    min-width: 250px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.anne-image img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.anne-text {
+    flex: 2 1 500px;
+    text-align: left;
+    padding-right: 1rem;
+}
+
+.anne-text .btn {
+    margin-top: 1rem;
+}
+
+.highlight {
+    background-color: #fdf4dc;
+    padding: 0 0.25rem;
+    border-radius: 4px;
+}
+
+
 
 .affiliate-options {
     display: flex;
@@ -373,7 +428,7 @@ nav {
     width: 90%;
 }
 
-.limitless-option {
+.affiliate {
     display: flex;
     align-items: center;
     gap: 3rem;
@@ -382,7 +437,7 @@ nav {
     width: 100%;
 }
 
-.limitless-image {
+.affiliate-image {
     width: 45%;
     height: auto;
     border-radius: 8px;
@@ -410,10 +465,151 @@ nav {
     background-color: #fff;
 }
 
-#free-training {
+
+
+
+
+
+
+.money-section {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    font-family: 'Inter', sans-serif;
+    color: #222;
+  }
+  
+  .money-intro {
     text-align: center;
-    padding: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .money-intro h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .money-intro p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .money-section section {
+    margin-bottom: 2.5rem;
+  }
+  
+  .money-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .money-section p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .money-section .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .money-section .feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .money-section .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .money-section .testimonial {
+    background-color: #f8f8f8;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid #4CAF50;
+    border-radius: 8px;
+    font-style: italic;
+  }
+  
+  .money-section .cta {
+    text-align: center;
+  }
+  
+  .money-section .cta button {
+    margin-top: 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .money-section .cta button:hover {
+    background-color: #45a049;
+  }
+  
+
+
+#free-training {
+    padding: 3rem 1rem;
 }
+
+#free-training h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.training-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.training-image {
+    flex: 1 1 300px;
+}
+
+.training-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.training-content {
+    flex: 2 1 500px;
+    text-align: left;
+}
+
+.training-content p {
+    margin-bottom: 1rem;
+}
+
+.highlight-show-txt {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.training-content .btn {
+    margin-top: 1rem;
+}
+
 
 
 /* ------------------------------------------------Footer */
@@ -532,6 +728,22 @@ footer {
         max-width: 80%; /* Optional: Control the width of the content */
         margin: 0 auto; /* Centers the block */
     }
+
+    .training-image img {
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .training-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .training-content {
+        text-align: center;
+    }
     
 }
 
@@ -559,6 +771,10 @@ footer {
         top: 25%; 
         left: 50%; 
         transform: translate(-50%, -50%);
+    }
+
+    .arrow-btn {
+        display: none;
     }
 
 }
