@@ -193,11 +193,13 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
     gap: 2rem;
     padding: 2rem;
     position: relative;
-    width: 100%;               /* Ensure full width */
+    width: 100%;
+    /* Ensure full width */
 
 }
 
@@ -206,7 +208,8 @@ nav {
     width: 90%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add this line */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Add this line */
 }
 
 .video-side-sections {
@@ -223,7 +226,8 @@ nav {
     display: block;
     margin: 0 auto;
     border-radius: 12px;
-    object-fit: cover; /* Ensures poster/image fills the box */
+    object-fit: cover;
+    /* Ensures poster/image fills the box */
 }
 
 
@@ -260,11 +264,11 @@ nav {
 }
 
 .content-wrapper {
-    max-width: 900px;         
-    padding-left: 2rem; 
+    max-width: 900px;
+    padding-left: 2rem;
     padding-right: 1rem;
     margin: 0 auto;
-    text-align: left;       
+    text-align: left;
 }
 
 
@@ -274,8 +278,11 @@ nav {
 
 .highlight {
     font-weight: bold;
-    display: inline-block; /* Makes the span behave like a block element */
-    margin-bottom: 1rem; /* Now the margin will apply */}
+    display: inline-block;
+    /* Makes the span behave like a block element */
+    margin-bottom: 1rem;
+    /* Now the margin will apply */
+}
 
 .section {
     margin-bottom: 40px;
@@ -352,11 +359,13 @@ nav {
 
 .no-bullets {
     list-style-type: none;
-    padding-left: 0; /* Remove any default padding */
+    padding-left: 0;
+    /* Remove any default padding */
 }
 
 .no-bullets li {
-    margin-bottom: 10px; /* Space between items */
+    margin-bottom: 10px;
+    /* Space between items */
 }
 
 .anne-container {
@@ -364,28 +373,36 @@ nav {
     margin: 3rem auto;
     padding: 2rem;
     background: #fff;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
 
 .anne-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     align-items: flex-start;
+    gap: 2.5rem;
+
 }
 
 .anne-image {
-    flex: 1 1 300px;
-    min-width: 250px;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 auto;
+    width: 100px;
+    height: auto;
     border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .anne-image img {
     width: 100%;
-    border-radius: 50%;
+    /* Ensure the image fills the container */
+    height: 100%;
+    /* Ensure the image covers the container */
     object-fit: cover;
+    /* Maintain aspect ratio without stretching */
 }
 
 .anne-text {
@@ -408,8 +425,8 @@ nav {
 
 .affiliate-options {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
@@ -424,7 +441,7 @@ nav {
     flex: 1;
     min-width: 280px;
     padding: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 5px;
     width: 90%;
 }
 
@@ -445,7 +462,7 @@ nav {
 
 .option-text {
     flex: 1;
-    text-align: left; 
+    text-align: left;
 }
 
 .process-options {
@@ -477,75 +494,74 @@ nav {
     padding: 3rem 2rem;
     background-color: #fff;
     border-radius: 16px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
     font-family: 'Inter', sans-serif;
     color: #222;
-  }
-  
-  .money-intro {
+}
+
+.money-intro {
     text-align: center;
     margin-bottom: 2.5rem;
-  }
-  
-  .money-intro h1 {
+}
+
+.money-intro h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-  }
-  
-  .money-intro p {
+}
+
+.money-intro p {
     font-size: 1.2rem;
     color: #555;
-  }
-  
-  .money-section section {
+}
+
+.money-section section {
     margin-bottom: 2.5rem;
-  }
-  
-  .money-section h2 {
+}
+
+.money-section h2 {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
-  }
-  
-  .money-section p {
+}
+
+.money-section p {
     font-size: 1.05rem;
     line-height: 1.6;
     color: #333;
-  }
-  
-  .money-section .features {
+}
+
+.money-section .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
-  }
-  
-  .money-section .feature h3 {
+}
+
+.money-section .feature h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-  }
-  
-  .money-section .testimonials {
+}
+
+.money-section .testimonials {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 1rem;
-  }
-  
-  .money-section .testimonial {
+}
+
+.money-section .testimonial {
     background-color: #f8f8f8;
     padding: 1rem 1.5rem;
-    border-left: 4px solid #4CAF50;
+    border-left: 4px solid #403da3;
     border-radius: 8px;
     font-style: italic;
-  }
-  
-  .money-section .cta {
+}
+
+.money-section .cta {
     text-align: center;
-  }
-  
-  .money-section .cta button {
+}
+
+.money-section .cta button {
     margin-top: 1rem;
     background-color: #4CAF50;
     color: #fff;
@@ -556,12 +572,17 @@ nav {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-  }
-  
-  .money-section .cta button:hover {
+}
+
+.money-section .cta button:hover {
     background-color: #45a049;
-  }
-  
+}
+
+.feature {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 5px;
+    padding: 20px;
+    border-radius: 10px;
+}
 
 
 #free-training {
@@ -690,27 +711,34 @@ footer {
     }
 
     .limitless-option {
-        flex-direction: column; /* Stack image and text on smaller screens */
-        align-items: center; /* Center content */
-        gap: 1rem; /* Add space between image and text */
+        flex-direction: column;
+        /* Stack image and text on smaller screens */
+        align-items: center;
+        /* Center content */
+        gap: 1rem;
+        /* Add space between image and text */
     }
 
     .limitless-image {
-        width: 80%; /* Adjust image size on smaller screens */
+        width: 80%;
+        /* Adjust image size on smaller screens */
     }
 
     .affiliate-options {
-        gap: 1rem;  /* Reduce gap between options on smaller screens */
+        gap: 1rem;
+        /* Reduce gap between options on smaller screens */
     }
 
     .affiliate-options section {
         min-width: 250px;
-        max-width: 100%; /* Allow items to stretch fully on mobile */
+        max-width: 100%;
+        /* Allow items to stretch fully on mobile */
     }
 
     /* Adjust the text size for mobile devices */
     .options-header {
-        font-size: 24px; /* Slightly smaller header on mobile */
+        font-size: 24px;
+        /* Slightly smaller header on mobile */
     }
 
     .option-text {
@@ -722,11 +750,14 @@ footer {
     .text-left {
         text-align: left;
     }
-    
+
     .centered-content {
-        text-align: center; /* This centers the block */
-        max-width: 80%; /* Optional: Control the width of the content */
-        margin: 0 auto; /* Centers the block */
+        text-align: center;
+        /* This centers the block */
+        max-width: 80%;
+        /* Optional: Control the width of the content */
+        margin: 0 auto;
+        /* Centers the block */
     }
 
     .training-image img {
@@ -744,7 +775,7 @@ footer {
     .training-content {
         text-align: center;
     }
-    
+
 }
 
 
@@ -760,7 +791,8 @@ footer {
     }
 
     .limitless-image {
-        width: 100%; /* Make image almost full width */
+        width: 100%;
+        /* Make image almost full width */
     }
 
     .options-header {
@@ -768,8 +800,8 @@ footer {
     }
 
     #playPauseBtn {
-        top: 25%; 
-        left: 50%; 
+        top: 25%;
+        left: 50%;
         transform: translate(-50%, -50%);
     }
 
@@ -791,10 +823,10 @@ footer {
     }
 
     #playPauseBtn {
-        top: 20%; 
-        left: 50%; 
+        top: 20%;
+        left: 50%;
         transform: translate(-50%, -50%);
     }
 
-    
+
 }
