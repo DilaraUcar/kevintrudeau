@@ -557,7 +557,7 @@ nav {
     font-style: italic;
 }
 
-.money-section .cta {
+.cta {
     text-align: center;
 }
 
@@ -583,6 +583,81 @@ nav {
     padding: 20px;
     border-radius: 10px;
 }
+
+
+
+.relationship-section {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 3rem 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.relationship-intro {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.relationship-intro h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.relationship-intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.relationship-section section {
+    margin-bottom: 2.5rem;
+}
+
+.relationship-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.relationship-section p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.relationship-section .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.relationship-section .feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.relationship-section .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.relationship-section .testimonial {
+    background-color: #f8f8f8;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid #403da3; /* Red to represent the relationship focus */
+    border-radius: 8px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
 
 
 #free-training {
