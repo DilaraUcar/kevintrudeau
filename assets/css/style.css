@@ -36,6 +36,15 @@
     }
 }
 
+@keyframes scroll-carousel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
 /* Initial state of the elements before animation */
 .fade-slide-up {
     opacity: 0;
@@ -655,10 +664,40 @@ nav {
 
 
 
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    background: ; /* dark navy blue */
+    padding: 1rem 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-carousel 30s linear infinite;
+  }
+  
+  .carousel-track img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-track img:hover {
+    transform: scale(1.05);
+  }
 
+  .carousel-track {
+    will-change: transform;
+  }
+  
+  
+  
 
-
-
+  
 
 #free-training {
     padding: 3rem 1rem;
