@@ -951,6 +951,18 @@ footer {
         display: none;
     }
 
+    .hero-header {
+        font-size: 20px;
+    }
+
+    .hero-description {
+        font-size: small;
+    }
+
+    .hero-overlay p {
+        margin: 0 !important;
+    }
+
 }
 
 /* Responsive Styles for Mobile */
@@ -983,6 +995,10 @@ footer {
 
     .money-section {
         padding: 2rem 2rem;
+    }
+
+    .hero-description {
+        margin: 0;
     }
     
 
