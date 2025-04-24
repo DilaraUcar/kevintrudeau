@@ -101,6 +101,10 @@ a.btn:hover {
     transform: translateY(-2px);
 }
 
+ul {
+    margin-left: 20px;
+    list-style-position: inside;
+}
 
 /* ------------------------------------------------------Header */
 header {
@@ -216,7 +220,7 @@ nav {
   }
   
   .hero-description {
-    
+    margin-top: 100px;
   }
 
   @media (max-width: 768px) {
@@ -317,7 +321,6 @@ nav {
     text-align: left;
 }
 
-
 .center {
     text-align: center;
 }
@@ -333,7 +336,6 @@ nav {
 .section {
     margin-bottom: 40px;
 }
-
 
 #hero {
     min-height: 85vh;
@@ -377,7 +379,7 @@ nav {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 15px solid #000;
+    border-top: 15px solid #ffffff;
     /* Color of the arrow */
     margin: 0 auto;
     /* Center horizontally */
@@ -390,7 +392,7 @@ nav {
     font-size: 1.5rem;
     font-style: italic;
     font-weight: 300;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin: 3rem auto;
     max-width: 800px;
     color: #222;
@@ -401,6 +403,7 @@ nav {
     transition: box-shadow 0.3s ease-in-out;
     line-height: 1.3;
     border-left: none;
+    width: 90%;
 }
 
 .no-bullets {
@@ -416,7 +419,6 @@ nav {
 
 .anne-container {
     max-width: 1100px;
-    margin: 3rem auto;
     padding: 2rem;
     background: #fff;
     border-radius: 20px;
@@ -440,6 +442,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .anne-image img {
@@ -462,53 +465,39 @@ nav {
 }
 
 .highlight {
-    background-color: #fdf4dc;
     padding: 0 0.25rem;
     border-radius: 4px;
 }
 
 
 
-.affiliate-options {
+.affiliate-carousel {
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .affiliate-options {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.options-header {
-    font-size: 30px;
-}
-
-.affiliate-options section {
-    flex: 1;
-    min-width: 280px;
+    transition: transform 0.5s ease;
+  }
+  
+  .affiliate {
+    flex: 0 0 100%;
+    text-align: center;
+    background: #eee;
     padding: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 5px;
-    width: 90%;
-}
+    box-sizing: border-box;
+  }
+  
 
-.affiliate {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-    width: 100%;
-}
 
-.affiliate-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
 
-.option-text {
-    flex: 1;
-    text-align: left;
-}
+
+
+
 
 .process-options {
     display: flex;
@@ -527,12 +516,6 @@ nav {
     background-color: #fff;
 }
 
-
-
-
-
-
-
 .money-section {
     max-width: 1000px;
     margin: 4rem auto;
@@ -549,7 +532,6 @@ nav {
 }
 
 .money-intro h1 {
-    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -564,7 +546,6 @@ nav {
 }
 
 .money-section h2 {
-    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -644,7 +625,6 @@ nav {
 }
 
 .relationship-intro h1 {
-    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -659,7 +639,6 @@ nav {
 }
 
 .relationship-section h2 {
-    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -845,7 +824,7 @@ footer {
     /* Hide nav by default on mobile */
     #nav-menu {
         display: none;
-        background-color: #fff;
+        background-color: #020A32;
         position: absolute;
         top: 100%;
         left: 0;
@@ -874,29 +853,13 @@ footer {
         /* Adjust image size on smaller screens */
     }
 
-    .affiliate-options {
-        gap: 1rem;
-        /* Reduce gap between options on smaller screens */
-    }
-
-    .affiliate-options section {
-        min-width: 250px;
-        max-width: 100%;
-        /* Allow items to stretch fully on mobile */
-    }
-
     /* Adjust the text size for mobile devices */
     .options-header {
         font-size: 24px;
         /* Slightly smaller header on mobile */
     }
 
-    .option-text {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+    
     .text-left {
         text-align: left;
     }
@@ -983,9 +946,7 @@ footer {
 
 
 @media (min-width: 768px) {
-    .affiliate-image {
-        width: 45%;
-    }
+    
 
     .relationship-section {
         padding: 2rem 2rem;

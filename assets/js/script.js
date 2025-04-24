@@ -71,4 +71,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
     checkVisibility(); // Initial check
     window.addEventListener('scroll', checkVisibility);
+
+    const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+  const carousel = document.querySelector(".affiliate-options");
+  const sections = document.querySelectorAll(".affiliate");
+
+  let currentIndex = 0;
+
+  // Function to update the carousel position
+  const updateCarousel = () => {
+    const offset = -currentIndex * 100;
+    console.log("🔄 Updating carousel:");
+    console.log("👉 Current Index:", currentIndex);
+    console.log("📐 Offset:", offset);
+    if (carousel) {
+      carousel.style.transform = `translateX(${offset}%)`;
+    } else {
+      console.error("❌ Carousel container not found!");
+    }
+  };
+
+  if (prevButton && nextButton && carousel && sections.length > 0) {
+    prevButton.addEventListener("click", () => {
+      console.log("⬅️ Previous button clicked");
+      currentIndex = currentIndex > 0 ? currentIndex - 1 : sections.length - 1;
+      updateCarousel();
+    });
+
+    nextButton.addEventListener("click", () => {
+      console.log("➡️ Next button clicked");
+      currentIndex = currentIndex < sections.length - 1 ? currentIndex + 1 : 0;
+      updateCarousel();
+    });
+
+    updateCarousel(); // Initial display
+  } else {
+    console.error("❌ One or more carousel elements not found!");
+    console.log({ prevButton, nextButton, carousel, sections });
+  }
 });
+
+
+
+
