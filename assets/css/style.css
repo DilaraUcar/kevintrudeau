@@ -38,12 +38,13 @@
 
 @keyframes scroll-carousel {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     100% {
-      transform: translateX(-50%);
+        transform: translateX(-50%);
     }
-  }
+}
 
 /* Initial state of the elements before animation */
 .fade-slide-up {
@@ -202,9 +203,9 @@ nav {
     height: 88vh;
     display: flex;
     padding: 2rem;
-  }
-  
-  .hero-overlay {
+}
+
+.hero-overlay {
     color: #fff;
     padding: 2rem;
     max-width: 800px;
@@ -212,24 +213,24 @@ nav {
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
     font-size: 1.1rem;
     line-height: 1.6;
-  }
+}
 
-  .hero-header {
+.hero-header {
     font-size: 30px;
     text-shadow: 0px 0px 0.16666667em rgba(255, 255, 255, 0.40);
-  }
-  
-  .hero-description {
-    margin-top: 100px;
-  }
+}
 
-  @media (max-width: 768px) {
+.hero-description {
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
     .hero-overlay {
-      font-size: 1rem;
-      padding: 1.5rem;
+        font-size: 1rem;
+        padding: 1.5rem;
     }
-  }
-  
+}
+
 
 .section-container {
     line-height: 1.6;
@@ -246,7 +247,7 @@ nav {
     flex-wrap: wrap;
     /* Allows wrapping on smaller screens */
     gap: 2rem;
-    padding: 2rem;
+    padding: 2rem 2rem 0;
     position: relative;
     width: 100%;
     /* Ensure full width */
@@ -477,51 +478,71 @@ nav {
     max-width: 700px;
     margin: auto;
     position: relative;
-  }
-  
-  .affiliate-options {
+}
+
+.affiliate-options {
     display: flex;
     transition: transform 0.5s ease;
-  }
-  
-  .affiliate {
+}
+
+.affiliate {
+    display: flex;
+    flex-direction: column;
+    max-height: 570px;
+    /* Or fixed height like 500px */
     flex: 0 0 100%;
     text-align: center;
     background: #eee;
     padding: 2rem;
     box-sizing: border-box;
-  }
+}
 
-  .affiliate-image {
+.affiliate p {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.option-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.affiliate .option-text a {
+    margin-top: auto;
+    /* Button moves to bottom */
+}
+
+
+
+.affiliate-image {
     width: 100%;
     height: auto;
     object-fit: cover;
     display: block;
-    margin-bottom: 1rem;
-  }
-  
-  .carousel-btn {
+}
+
+.carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 0.75rem 1rem;
-    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
     cursor: pointer;
     z-index: 10;
-  }
-  
-  .carousel-btn.prev {
-    left: 10px;
-  }
-  
-  .carousel-btn.next {
-    right: 10px;
-  }
-  
+    border-radius: 50%;
+}
 
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
 
 
 
@@ -700,7 +721,8 @@ nav {
 .relationship-section .testimonial {
     background-color: #f8f8f8;
     padding: 1rem 1.5rem;
-    border-left: 4px solid #403da3; /* Red to represent the relationship focus */
+    border-left: 4px solid #403da3;
+    /* Red to represent the relationship focus */
     border-radius: 8px;
     font-style: italic;
 }
@@ -711,37 +733,38 @@ nav {
 .carousel-wrapper {
     overflow: hidden;
     width: 100%;
-    background: ; /* dark navy blue */
+    background: ;
+    /* dark navy blue */
     padding: 1rem 0;
-  }
-  
-  .carousel-track {
+}
+
+.carousel-track {
     display: flex;
     width: max-content;
     animation: scroll-carousel 30s linear infinite;
-  }
-  
-  .carousel-track img {
-    width: 400px;
-    height: 400px;
+}
+
+.carousel-track img {
+    width: 250px;
+    height: 200px;
     object-fit: cover;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
-  }
-  
-  .carousel-track img:hover {
+}
+
+.carousel-track img:hover {
     transform: scale(1.05);
-  }
+}
 
-  .carousel-track {
+.carousel-track {
     will-change: transform;
-  }
-  
-  
-  
+}
 
-  
+
+
+
+
 
 #free-training {
     padding: 3rem 1rem;
@@ -772,7 +795,6 @@ nav {
 }
 
 .training-content {
-    flex: 2 1 500px;
     text-align: left;
 }
 
@@ -788,6 +810,47 @@ nav {
 .training-content .btn {
     margin-top: 1rem;
 }
+
+
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .testimonial {
+    background: white;
+    padding: 1.5rem;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-size: 0.95rem;
+  }
+  
+  .quote {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .author {
+    font-weight: bold;
+    color: #222;
+  }
+  
 
 
 
@@ -888,7 +951,7 @@ footer {
         /* Slightly smaller header on mobile */
     }
 
-    
+
     .text-left {
         text-align: left;
     }
@@ -987,7 +1050,7 @@ footer {
 
 
 @media (min-width: 768px) {
-    
+
 
     .relationship-section {
         padding: 2rem 2rem;
@@ -1000,9 +1063,9 @@ footer {
     .hero-description {
         margin: 0;
     }
-    
 
-    
+
+
 }
 
 @media (min-width: 1000px) {
@@ -1010,6 +1073,5 @@ footer {
         padding: 2rem;
     }
 
-    
-}
 
+}
