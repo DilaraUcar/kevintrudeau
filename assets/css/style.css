@@ -1032,6 +1032,10 @@ footer {
         margin: 0 !important;
     }
 
+    .sc-remove {
+        display: none;
+    }
+
 }
 
 /* Responsive Styles for Mobile */
@@ -1068,6 +1072,10 @@ footer {
 
     .hero-description {
         margin: 0;
+    }
+
+    .bc-remove {
+        display: none;
     }
 
 
