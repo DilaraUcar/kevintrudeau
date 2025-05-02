@@ -88,7 +88,7 @@ a.btn {
     background-color: #daa520;
     /* Your custom dark blue */
     color: #000000;
-    padding: 0.8rem 2rem;
+    padding: 1rem 2rem;
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -96,10 +96,16 @@ a.btn {
     margin-top: 1rem;
     border-radius: 10px;
     font-size: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 65%;
+    margin: 1rem auto 0 auto;
+    /* top auto bottom auto */
+
 }
 
 a.btn:hover {
-    background-color: #031249;
+    background-color: rgb(255, 183, 0);
+    color: #ffffff;
     /* Slightly lighter shade for hover */
     transform: translateY(-2px);
 }
@@ -473,7 +479,7 @@ nav {
     line-height: 1.3;
     border-left: none;
     width: 90%;
-    
+
 }
 
 .carousel-wrapper {
@@ -530,6 +536,7 @@ nav {
     text-align: center;
     padding: 2rem;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 .affiliate p {
@@ -584,10 +591,6 @@ nav {
 }
 
 
-
-
-
-
 .process-options {
     display: flex;
     flex-wrap: wrap;
@@ -605,12 +608,29 @@ nav {
     background-color: #fff;
 }
 
+.money-bg {
+    background: url('/assets/imgs/m-process.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    /* or however tall you want it */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.money-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.4);
+}
+
 .money-section {
     max-width: 1000px;
     margin: 4rem auto;
     padding: 1rem 2rem;
-    background-color: #fff;
-    border-radius: 16px;
     font-family: 'Inter', sans-serif;
     color: #222;
 }
@@ -627,7 +647,7 @@ nav {
 
 .money-intro p {
     font-size: 1.2rem;
-    color: #555;
+    color: #000000;
 }
 
 .money-section section {
@@ -642,7 +662,7 @@ nav {
 .money-section p {
     font-size: 1.05rem;
     line-height: 1.6;
-    color: #333;
+    color: #000000;
 }
 
 .money-section .features {
@@ -665,11 +685,12 @@ nav {
 }
 
 .money-section .testimonial {
-    background-color: #f8f8f8;
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 1rem 1.5rem;
     border-left: 4px solid #403da3;
-    border-radius: 8px;
+    border-radius: unset;
     font-style: italic;
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.4);
 }
 
 .cta {
@@ -694,9 +715,9 @@ nav {
 }
 
 .feature {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 5px;
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.4);
     padding: 20px;
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -821,41 +842,41 @@ nav {
     background-color: #f9f9f9;
     padding: 3rem 1rem;
     text-align: center;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: #333;
-  }
-  
-  .testimonial-list {
+}
+
+.testimonial-list {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-  }
-  
-  .testimonial {
+}
+
+.testimonial {
     background: white;
     padding: 1.5rem;
     max-width: 400px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 0.95rem;
-  }
-  
-  .quote {
+}
+
+.quote {
     font-style: italic;
     margin-bottom: 1rem;
     color: #555;
-  }
-  
-  .author {
+}
+
+.author {
     font-weight: bold;
     color: #222;
-  }
-  
+}
+
 
 
 
@@ -1033,7 +1054,7 @@ footer {
     }
 
     .sc-remove {
-        display: none;
+        display: none !important;
     }
 
 }
@@ -1075,17 +1096,13 @@ footer {
     }
 
     .bc-remove {
-        display: none;
+        display: none !important;
     }
 
-
-
-}
-
-@media (min-width: 1000px) {
-    .affiliate-options {
-        padding: 2rem;
+    .affiliate-carousel {
+        padding: 2rem 0 2rem 0;
     }
+
 
 
 }
