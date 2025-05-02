@@ -609,15 +609,14 @@ nav {
 }
 
 .money-bg {
-    background: url('/assets/imgs/m-process.jpg') no-repeat center center;
-    background-size: cover;
+    background: url('/assets/imgs/m-process.jpg') no-repeat center center / cover;
     width: 100%;
     min-height: 100vh;
     /* or however tall you want it */
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    background-attachment: scroll; /* safer for iOS */
+    z-index: 0;
 }
 
 .money-bg::before {
