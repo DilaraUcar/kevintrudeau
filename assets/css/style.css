@@ -619,12 +619,7 @@ nav {
     z-index: 0;
 }
 
-.money-bg::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.4);
-}
+
 
 .money-section {
     max-width: 1000px;
