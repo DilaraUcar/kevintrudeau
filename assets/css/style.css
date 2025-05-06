@@ -611,7 +611,7 @@ nav {
 .money-bg {
     background: 
     linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-    url('../assets/imgs/m-process.jpg') no-repeat center center / cover;
+    url('/kevintrudeau/assets/imgs/m-process.jpg') no-repeat center center / cover;
     width: 100%;
     min-height: 100vh;
     display: flex;
