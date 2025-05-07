@@ -559,6 +559,10 @@ nav {
     /* Button moves to bottom */
 }
 
+.italic-small {
+    font-size: small !important;
+}
+
 
 
 .affiliate-image {
