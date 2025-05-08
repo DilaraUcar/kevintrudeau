@@ -204,7 +204,7 @@ nav {
 
 /* ------------------------------------------------Main Content Section */
 .hero {
-    background-image: url('../imgs/kt-hero.jpg');
+    background-image: url('../imgs/hero7.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -230,6 +230,11 @@ nav {
 
 .hero-description {
     margin-top: 100px;
+}
+
+/* Add this for smaller screens and remove padding for p elements to make the spacing smaller */
+.pb-hero {
+    padding-bottom: ;
 }
 
 @media (max-width: 768px) {
