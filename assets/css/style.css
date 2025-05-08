@@ -253,6 +253,10 @@ nav {
     padding: 10px 0px;
 }
 
+.sm-question {
+    padding: 15px;
+}
+
 .video-section-wrapper {
     display: flex;
     justify-content: center;
