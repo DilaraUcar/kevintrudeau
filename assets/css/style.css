@@ -234,7 +234,7 @@ nav {
 
 /* Add this for smaller screens and remove padding for p elements to make the spacing smaller */
 .pb-hero {
-    padding-bottom: ;
+    padding-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1067,7 +1067,7 @@ footer {
 }
 
 /* Responsive Styles for Mobile */
-@media (max-width: 320px) {
+@media (max-width: 325px) {
     #logo {
         font-size: 1.2rem;
         /* Smaller logo size on mobile */
@@ -1085,6 +1085,15 @@ footer {
 
     .hero-description {
         font-size: 12px;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+
+    .hero-description {
+        font-size: 13px;
     }
 
 
