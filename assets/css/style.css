@@ -425,14 +425,13 @@ nav {
 
 .anne-content {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;   /* Center horizontally */
+    text-align: center;    /* Center text inside */
     gap: 2.5rem;
-
 }
 
 .anne-image {
-    flex: 1 1 auto;
     width: 100px;
     height: auto;
     border-radius: 50%;
@@ -446,15 +445,11 @@ nav {
 
 .anne-image img {
     width: 100%;
-    /* Ensure the image fills the container */
     height: 100%;
-    /* Ensure the image covers the container */
     object-fit: cover;
-    /* Maintain aspect ratio without stretching */
 }
 
 .anne-text {
-    flex: 2 1 500px;
     text-align: left;
     padding-right: 1rem;
 }
