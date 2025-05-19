@@ -87,6 +87,10 @@ a {
     color: #000;
 }
 
+a:hover {
+    transform: translateY(-2px);
+}
+
 a.btn {
     display: inline-block;
     background-color: #daa520;
@@ -349,11 +353,12 @@ nav {
 
 .highlight {
     font-weight: bold;
-    display: inline-block;
     background-color: #e7efff;
     /* Makes the span behave like a block element */
     margin-bottom: 1rem;
     /* Now the margin will apply */
+    width: fit-content;
+    justify-self: center;
 }
 
 .section {
