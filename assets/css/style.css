@@ -83,6 +83,10 @@ main {
     flex: 1 0 auto;
 }
 
+a {
+    color: #000;
+}
+
 a.btn {
     display: inline-block;
     background-color: #daa520;
@@ -346,6 +350,7 @@ nav {
 .highlight {
     font-weight: bold;
     display: inline-block;
+    background-color: #e7efff;
     /* Makes the span behave like a block element */
     margin-bottom: 1rem;
     /* Now the margin will apply */
@@ -472,6 +477,11 @@ nav {
     max-width: 65%;
     margin: 1rem auto 0 auto;
     transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.transp-btn:hover {
+    text-decoration: underline;
+    color: #050088;
 }
 
 .highlight {
