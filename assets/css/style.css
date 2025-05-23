@@ -655,6 +655,10 @@ nav {
     right: 10px;
 }
 
+.books {
+    padding-top: 25px;
+}
+
 .book-grid {
     display: flex;
     gap: 20px;
