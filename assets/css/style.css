@@ -746,14 +746,7 @@ nav {
     background-color: #fff;
 }
 
-.money-bg {
-    background: 
-    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-    url('/kevintrudeau/assets/imgs/m-process.jpg') no-repeat center center / cover;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-}
+
 
 
 #free-training {
@@ -829,7 +822,7 @@ nav {
     font-size: 1.25rem;
     margin: 30px 0;
     color: #000000;
-    font-weight: 600;
+    font-weight: 400;
   }
   
   .closing-note .signature {
