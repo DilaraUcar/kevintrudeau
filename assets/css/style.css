@@ -805,8 +805,8 @@ nav {
 }
 
 .training-content {
+    flex: 1 1 300px;
     text-align: left;
-    padding-bottom: 50px;
 }
 
 .training-content p {
@@ -816,6 +816,12 @@ nav {
 .highlight-show-txt {
     font-size: 1.3rem;
     font-style: italic;
+    font-weight: bold;
+}
+
+.free-training-txt {
+    line-height: 32px;
+    letter-spacing: 1px;
 }
 
 .training-content .btn {
