@@ -743,12 +743,13 @@ nav {
   }
   
   .process-grid img {
-    width: 200px;
+    width: 250px;
     height: auto;
     border-radius: 12px;
     display: block;
     transition: transform 0.3s ease, filter 0.3s ease; /* slower transition */
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)); /* subtle glow */  }
+    filter: drop-shadow(0 0 13px rgba(255, 255, 255, 0.7)); /* subtle glow */  
+}
   
   .process-grid a:hover img {
     transform: scale(1.05);
