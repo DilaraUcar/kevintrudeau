@@ -765,21 +765,22 @@ nav {
 
 .process-btn {
     padding: 13px 20px;
-    background-color: #0056b3;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 3px;
     margin-top: 1rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 15px rgb(100 64 249 / 90%);
+    box-shadow: 0 0 13px rgba(255, 255, 255, 0.7);
 }
 
 .process-btn:hover {
-    background-color: #007bff;
+    background-color: #efefef;
 }
 
 .process-btn.secondary {
     background-color: #6c757d;
+    color: white;
 }
 
 .process-btn.secondary:hover {
@@ -1092,6 +1093,9 @@ footer {
         display: none !important;
     }
 
+    .book-grid {
+        padding: 0;
+    }
 }
 
 /* Responsive Styles for Mobile */
