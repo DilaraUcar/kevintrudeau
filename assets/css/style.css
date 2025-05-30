@@ -756,6 +756,36 @@ nav {
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); /* stronger glow on hover */
 }
 
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.process-btn {
+    padding: 13px 20px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgb(100 64 249 / 90%);
+}
+
+.process-btn:hover {
+    background-color: #007bff;
+}
+
+.process-btn.secondary {
+    background-color: #6c757d;
+}
+
+.process-btn.secondary:hover {
+    background-color: #5a6268;
+}
+
 
 .process-options {
     display: flex;
@@ -856,8 +886,6 @@ nav {
     font-size: 1.25rem;
     margin: 30px 0;
     color: #000000;
-    font-weight: 500;
-    letter-spacing: 1px;
   }
   
   .closing-note .signature {
