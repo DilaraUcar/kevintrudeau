@@ -1099,9 +1099,11 @@ footer {
     }
 
     .book-grid img {
-        width: 200px;
+        width: 195px;
     }
 }
+
+
 
 /* Responsive Styles for Mobile */
 @media (max-width: 325px) {
