@@ -674,7 +674,7 @@ nav {
   }
   
   .book-grid img {
-    width: 200px;
+    width: 250px;
     height: auto;
     border-radius: 12px;
     display: block;
@@ -1127,6 +1127,10 @@ footer {
 
     .hero-description {
         font-size: 13px;
+    }
+
+    .book-grid img {
+        width: 150px;
     }
 
 
