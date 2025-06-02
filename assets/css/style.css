@@ -59,6 +59,10 @@
     animation: fadeSlideUp 0.6s ease-out forwards;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     display: flex;
