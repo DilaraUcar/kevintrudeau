@@ -257,8 +257,8 @@ nav {
 
 .hero-overlay {
     color: #fff;
-    padding: 2rem;
-    max-width: 800px;
+    padding: 8rem 0 0 2rem;
+    max-width: 600px;
     border-radius: 1rem;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
     font-size: 1.1rem;
