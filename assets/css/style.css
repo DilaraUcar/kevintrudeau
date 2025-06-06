@@ -60,7 +60,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -96,7 +96,7 @@ a:hover {
 }
 
 a[href^="mailto:"]:hover {
-  color: blue;
+    color: blue;
 }
 
 
@@ -462,7 +462,8 @@ nav {
 
 .anne-container {
     max-width: 900px;
-    margin: 0 auto; /* ⬅️ This centers the container */
+    margin: 0 auto;
+    /* ⬅️ This centers the container */
     padding: 2rem;
     background: #fff;
     border-radius: 20px;
@@ -471,14 +472,14 @@ nav {
 .anne-content {
     display: flex;
     flex-direction: column;
-    align-items: center;   
-    text-align: center;    
+    align-items: center;
+    text-align: center;
     gap: 2.5rem;
 }
 
 .anne-image {
-    width: 300px;           
-    aspect-ratio: 1 / 1;     
+    width: 300px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
     box-sizing: border-box;
@@ -566,7 +567,7 @@ nav {
 .carousel-track {
     display: flex;
     width: max-content;
-    animation: scroll-carousel 30s linear infinite;
+    animation: scroll-carousel 35s linear infinite;
 }
 
 .carousel-track img {
@@ -677,25 +678,29 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     padding: 40px;
-  }
-  
-  .book-grid a {
+}
+
+.book-grid a {
     display: inline-block;
     border-radius: 12px;
     overflow: visible;
-  }
-  
-  .book-grid img {
+}
+
+.book-grid img {
     width: 250px;
     height: auto;
     border-radius: 12px;
     display: block;
-    transition: transform 0.3s ease, filter 0.3s ease; /* slower transition */
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)); /* subtle glow */  }
-  
-  .book-grid a:hover img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* slower transition */
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+    /* subtle glow */
+}
+
+.book-grid a:hover img {
     transform: scale(1.05);
-    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); /* stronger glow on hover */
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9));
+    /* stronger glow on hover */
 }
 
 .book-message {
@@ -708,64 +713,67 @@ nav {
     line-height: 1.6;
     text-align: left;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
-  }
-  
-  .book-message h2 {
+}
+
+.book-message h2 {
     font-size: 2rem;
     color: #ffffff;
     margin-bottom: 20px;
-  }
-  
-  .book-message p {
+}
+
+.book-message p {
     margin-bottom: 20px;
     font-size: 1.1rem;
-  }
-  
-  .book-message em {
+}
+
+.book-message em {
     font-style: italic;
     color: #ccc;
-  }
-  
-  .book-message blockquote {
+}
+
+.book-message blockquote {
     font-style: italic;
     margin: 30px 0;
     padding-left: 20px;
     border-left: 3px solid #ffffff;
-  }
-  
-  .book-message blockquote span {
+}
+
+.book-message blockquote span {
     display: block;
     margin-top: 10px;
     font-size: 0.95rem;
     color: #aaa;
-  }
-  
-  
-  .process-grid {
+}
+
+
+.process-grid {
     display: flex;
     gap: 80px;
     justify-content: center;
     flex-wrap: wrap;
-  }
-  
-  .process-grid a {
+}
+
+.process-grid a {
     display: inline-block;
     border-radius: 12px;
     overflow: visible;
-  }
-  
-  .process-grid img {
+}
+
+.process-grid img {
     width: 250px;
     height: auto;
     border-radius: 12px;
     display: block;
-    transition: transform 0.3s ease, filter 0.3s ease; /* slower transition */
-    filter: drop-shadow(0 0 13px rgba(255, 255, 255, 0.7)); /* subtle glow */  
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* slower transition */
+    filter: drop-shadow(0 0 13px rgba(255, 255, 255, 0.7));
+    /* subtle glow */
 }
-  
-  .process-grid a:hover img {
+
+.process-grid a:hover img {
     transform: scale(1.05);
-    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); /* stronger glow on hover */
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9));
+    /* stronger glow on hover */
 }
 
 .button-group {
@@ -893,37 +901,37 @@ nav {
     line-height: 1.8;
     text-align: left;
     font-family: 'Open Sans', 'Segoe UI', sans-serif;
-  }
-  
-  .closing-note .emphasis {
+}
+
+.closing-note .emphasis {
     font-size: 1.25rem;
     margin: 30px 0;
     color: #000000;
-  }
-  
-  .closing-note .signature {
+}
+
+.closing-note .signature {
     margin-top: 40px;
     font-style: italic;
     font-size: 1rem;
     text-align: right;
     color: #000000;
-  }
-  
-  .closing-note .signature span {
+}
+
+.closing-note .signature span {
     display: block;
     font-size: 1.2rem;
     color: #000000;
     font-weight: bold;
     margin-top: 6px;
-  }
+}
 
-  .name-signature {
-  font-family: 'Allura', cursive;
-  font-size: 3rem !important;
-  font-weight: 100 !important;
-  font-style: normal;
-  letter-spacing: 0.5px;
-  color: rgba(0, 0, 0, 0.8) !important; 
+.name-signature {
+    font-family: 'Allura', cursive;
+    font-size: 3rem !important;
+    font-weight: 100 !important;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.8) !important;
 }
 
 
@@ -1112,6 +1120,11 @@ footer {
 
     .book-grid img {
         width: 195px;
+    }
+
+    .carousel-track img {
+        width: 200px;
+        height: 200px;
     }
 }
 
