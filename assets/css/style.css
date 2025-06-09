@@ -564,12 +564,21 @@ nav {
     padding: 1rem 0;
 }
 
+/* Default */
 .carousel-track {
     display: flex;
     width: max-content;
-    animation: scroll-carousel 35s linear infinite;
+    animation: scroll-carousel 45s linear infinite;
 }
 
+/* Custom speeds */
+.wrapper-1 .carousel-track {
+    animation-duration: 75s;
+}
+
+.wrapper-2 .carousel-track {
+    animation-duration: 80s; 
+}
 .carousel-track img {
     width: 250px;
     height: 200px;
