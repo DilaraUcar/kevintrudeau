@@ -76,6 +76,10 @@ body {
     font-family: 'poppins', sans-serif;
 }
 
+.red {
+    color: #c20000;
+}
+
 a {
     text-decoration: none;
 }
@@ -1876,7 +1880,7 @@ footer .socials a:hover {
     /* Hide nav by default on mobile */
     #nav-menu {
         display: none;
-        background-color: #020A32;
+        background-color: #ffffff;
         position: absolute;
         top: 100%;
         left: 0;
