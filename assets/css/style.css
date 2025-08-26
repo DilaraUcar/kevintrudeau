@@ -159,6 +159,10 @@ p {
     padding-top: 1rem;
 }
 
+.pb-b {
+    padding-bottom: 4rem;
+}
+
 .pb {
     padding-bottom: 2rem;
 }
@@ -167,6 +171,9 @@ p {
     padding-bottom: 1rem;
 }
 
+.mb {
+    margin-bottom: 1rem;
+}
 
 h1,
 h2,
@@ -224,6 +231,20 @@ a[href^="mailto:"]:hover {
     text-transform: uppercase;
     font-size: 13px;
 }
+
+.dark-btn-gin {
+  background-color: #90201d;
+  color: #CCC6AD;
+  border-radius: 53px;
+  padding: 1.2rem 2.5rem; /* taller & wider */
+  text-transform: uppercase;
+  font-size: 18px;        /* bigger text */
+  font-weight: 600;
+  display: inline-block;  /* ensures padding works nicely */
+  min-width: 200px;       /* optional: ensures a consistent size */
+  text-align: center;     /* keeps text centered */
+}
+
 
 
 a.btn {
@@ -1202,7 +1223,7 @@ nav {
     letter-spacing: 2px;
     max-width: 70%;
     margin: 0 auto;
-    padding-bottom: 90px;
+    padding-bottom: 50px;
 }
 
 .anne-container {
@@ -1214,8 +1235,8 @@ nav {
 .anne-container .center a.dark-btn {
 
     display: inline-block;
-    width: 20%;
     margin-top: 20px;
+    padding: 20px;
 }
 
 
