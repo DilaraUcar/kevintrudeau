@@ -345,6 +345,15 @@ section {
     left: 0;
     width: 100%;
     z-index: 1000;
+    display: block;
+}
+
+.top-banner a,
+.top-banner:visited,
+.top-banner:hover,
+.top-banner:active,
+.top-banner:focus {
+  color: #CCC6AD !important;   /* or whatever color your banner text uses */
 }
 
 header {
